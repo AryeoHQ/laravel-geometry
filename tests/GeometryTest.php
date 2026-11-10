@@ -144,8 +144,8 @@ class GeometryTest extends TestCase
                      ->withArgs([
                          'Spinen\Geometry\Geometries\Polygon',
                          [
-                             $polygon,
-                             $this->mapper_mock,
+                             'geometry' => $polygon,
+                             'mapper' => $this->mapper_mock,
                          ],
                      ])
                      ->andReturn(new GeometryProxy($polygon, $this->mapper_mock));

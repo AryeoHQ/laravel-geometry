@@ -1,5 +1,5 @@
 {
-    "name": "spinen/laravel-geometry",
+    "name": "aryeo/laravel-geometry",
     "description": "Wrapper over the geoPHP Class to make it integrate with Laravel better.",
     "keywords": [
         "geometry",
@@ -25,11 +25,14 @@
         "illuminate/support": ">=9.0",
         "phayes/geophp": "~1.2"
     },
+    "replace": {
+        "spinen/laravel-geometry": "self.version"
+    },
     "require-dev": {
         "laravel/pint": "^1.6",
         "mockery/mockery": "^1.5.1",
         "phpunit/phpunit": "^9.6.5",
-        "psy/psysh": "^0.11.1",
+        "psy/psysh": "^0.12",
         "symfony/var-dumper": "^6.2"
     },
     "autoload": {
